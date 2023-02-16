@@ -1,16 +1,30 @@
 body {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
-.header {
+
+.hero {
+    display: flex;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
-    height: 75px;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
-    padding: 16px;
 }
 
 .logo {
@@ -26,26 +40,79 @@ ul {
     gap: 12px;
 }
 
-a {
+a, .order p {
 text-decoration: none;
-color: lightgrey;
+color: #e5e7eb;
+font-size: 18px;
 }
 
-.welcome {
+
+.hero .container {
     display: flex;
+    background-color: #1F2937;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.haveanother {
+
+.image img {
+    flex:1;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.order {
     flex: 1;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.bigboy {
-    flex:1;
+.order h1 {
+font-size: 48px;
+font-weight: bolder;
+color: #F9faf8;
 }
 
-img {
-    width: 300px;
-    height: 300px;
+button {
+    max-width: 200px;
+}
+
+.hero button {
+    background-color: #3882f6;
+    color: white;
+}
+
+.info .container h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.info .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boxes {
+    display: flex;
+    gap: 16px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    flex: 1;
 }
