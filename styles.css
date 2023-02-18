@@ -1,12 +1,14 @@
-body {
+
+
+.main {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 
-.hero {
+.hero, .info, .quote, .footer {
     display: flex;
+    flex: 1 1 auto;
 }
 
 
@@ -25,8 +27,6 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    padding-bottom: 50px;
-    padding-top: 20px;
 }
 
 .logo {
@@ -98,8 +98,6 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding-top: 0px;
-    padding-bottom: 60px;
 }
 
 .boxes {
@@ -142,4 +140,39 @@ button {
 
 .quote .container h3 {
     align-self: flex-end;
+}
+
+.footer .container {
+    width: 100%;
+}
+.footer .container .bubble {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color:#3882f6;
+    padding: 100px;
+    margin: 100px 0;
+    flex: 1;
+}
+
+.badger {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.badger h1 {
+    color:white;
+    font-size: 25px;
+}
+
+.badger p {
+    color: lightgrey;
+}
+
+.bubble button {
+    border-color: white;
+    background-color: #3882f6;
+    color: white;
 }
