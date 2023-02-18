@@ -1,17 +1,12 @@
 
 
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
 h1 h2 h3 h4 h5 h6 {
     mARGIN: 0px;
     padding: 0px;
 }
 
 
-.hero, .info, .quote, .footer {
+.hero, .info, .quote, .prompt, .footer {
     display: flex;
     flex: 1 1 auto;
 }
@@ -156,14 +151,15 @@ button {
     margin-top: 8px;
 }
 
-.footer .container {
+.prompt .container {
     width: 100%;
-    padding: 50px 415px;
+    padding: 50px 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer .container .bubble {
+
+.prompt .container .bubble {
     display: flex;
     justify-content: space-between;
     border-radius: 25px;
@@ -196,4 +192,15 @@ button {
     height: 50px;
     padding: 10px;
     align-self: center;
+}
+
+.footer .container {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
 }
